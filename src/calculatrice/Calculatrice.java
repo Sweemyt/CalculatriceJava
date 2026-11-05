@@ -19,7 +19,7 @@ public class Calculatrice extends JFrame {
 
 	private static final long serialVersionUID = 1L;
 	private JPanel contentPane;
-	private 
+	/*private 
 
 	/**
 	 * Launch the application.
@@ -42,7 +42,7 @@ public class Calculatrice extends JFrame {
 	 */
 	public Calculatrice() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(100, 100, 360, 300);
+		setBounds(100, 100, 340, 340);
 		contentPane = new JPanel();
 		contentPane.setBackground(Color.DARK_GRAY);
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
@@ -51,7 +51,7 @@ public class Calculatrice extends JFrame {
 		
 		JLabel Label = new JLabel("0");
 		Label.setBorder(null);
-		Label.setBounds(10, 39, 328, 41);
+		Label.setBounds(10, 39, 300, 41);
 		Label.setBackground(Color.WHITE);
 		Label.setFont(new Font("Segoe UI", Font.BOLD, 30));
 		Label.setHorizontalAlignment(SwingConstants.TRAILING);
@@ -68,7 +68,7 @@ public class Calculatrice extends JFrame {
 		btn7.setBackground(Color.WHITE);
 		btn7.setForeground(Color.BLACK);
 		btn7.setFont(new Font("Segoe UI", Font.BOLD, 20));
-		btn7.setBounds(18, 102, 70, 29);
+		btn7.setBounds(20, 112, 70, 35);
 		contentPane.add(btn7);
 		
 		JButton btn8 = new JButton("8");
@@ -81,7 +81,7 @@ public class Calculatrice extends JFrame {
 		btn8.setForeground(Color.BLACK);
 		btn8.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn8.setBackground(Color.WHITE);
-		btn8.setBounds(98, 102, 70, 29);
+		btn8.setBounds(100, 112, 70, 35);
 		contentPane.add(btn8);
 		
 		JButton btn9 = new JButton("9");
@@ -94,7 +94,7 @@ public class Calculatrice extends JFrame {
 		btn9.setForeground(Color.BLACK);
 		btn9.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn9.setBackground(Color.WHITE);
-		btn9.setBounds(178, 102, 70, 29);
+		btn9.setBounds(180, 112, 70, 35);
 		contentPane.add(btn9);
 		
 		JButton btnDiviser = new JButton("÷");
@@ -107,7 +107,7 @@ public class Calculatrice extends JFrame {
 		btnDiviser.setForeground(Color.BLACK);
 		btnDiviser.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btnDiviser.setBackground(Color.WHITE);
-		btnDiviser.setBounds(258, 102, 70, 29);
+		btnDiviser.setBounds(268, 114, 42, 29);
 		contentPane.add(btnDiviser);
 		
 		JButton btnMultiplier = new JButton("x");
@@ -120,7 +120,7 @@ public class Calculatrice extends JFrame {
 		btnMultiplier.setForeground(Color.BLACK);
 		btnMultiplier.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		btnMultiplier.setBackground(Color.WHITE);
-		btnMultiplier.setBounds(258, 142, 70, 29);
+		btnMultiplier.setBounds(268, 150, 42, 29);
 		contentPane.add(btnMultiplier);
 		
 		JButton btn6 = new JButton("6");
@@ -133,7 +133,7 @@ public class Calculatrice extends JFrame {
 		btn6.setForeground(Color.BLACK);
 		btn6.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn6.setBackground(Color.WHITE);
-		btn6.setBounds(178, 142, 70, 29);
+		btn6.setBounds(180, 158, 70, 35);
 		contentPane.add(btn6);
 		
 		JButton btn5 = new JButton("5");
@@ -146,7 +146,7 @@ public class Calculatrice extends JFrame {
 		btn5.setForeground(Color.BLACK);
 		btn5.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn5.setBackground(Color.WHITE);
-		btn5.setBounds(98, 142, 70, 29);
+		btn5.setBounds(100, 158, 70, 35);
 		contentPane.add(btn5);
 		
 		JButton btn4 = new JButton("4");
@@ -159,7 +159,7 @@ public class Calculatrice extends JFrame {
 		btn4.setForeground(Color.BLACK);
 		btn4.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn4.setBackground(Color.WHITE);
-		btn4.setBounds(18, 142, 70, 29);
+		btn4.setBounds(20, 158, 70, 35);
 		contentPane.add(btn4);
 		
 		JButton btnMoins = new JButton("-");
@@ -172,7 +172,7 @@ public class Calculatrice extends JFrame {
 		btnMoins.setForeground(Color.BLACK);
 		btnMoins.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btnMoins.setBackground(Color.WHITE);
-		btnMoins.setBounds(258, 182, 70, 29);
+		btnMoins.setBounds(268, 185, 42, 29);
 		contentPane.add(btnMoins);
 		
 		JButton btn3 = new JButton("3");
@@ -185,7 +185,7 @@ public class Calculatrice extends JFrame {
 		btn3.setForeground(Color.BLACK);
 		btn3.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn3.setBackground(Color.WHITE);
-		btn3.setBounds(178, 182, 70, 29);
+		btn3.setBounds(180, 204, 70, 35);
 		contentPane.add(btn3);
 		
 		JButton btn2 = new JButton("2");
@@ -198,7 +198,7 @@ public class Calculatrice extends JFrame {
 		btn2.setForeground(Color.BLACK);
 		btn2.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn2.setBackground(Color.WHITE);
-		btn2.setBounds(98, 182, 70, 29);
+		btn2.setBounds(100, 204, 70, 35);
 		contentPane.add(btn2);
 		
 		JButton btn1 = new JButton("1");
@@ -211,7 +211,7 @@ public class Calculatrice extends JFrame {
 		btn1.setForeground(Color.BLACK);
 		btn1.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn1.setBackground(Color.WHITE);
-		btn1.setBounds(18, 182, 70, 29);
+		btn1.setBounds(20, 204, 70, 35);
 		contentPane.add(btn1);
 		
 		JButton btnPlus = new JButton("+");
@@ -224,7 +224,7 @@ public class Calculatrice extends JFrame {
 		btnPlus.setForeground(Color.BLACK);
 		btnPlus.setFont(new Font("Segoe UI", Font.PLAIN, 20));
 		btnPlus.setBackground(Color.WHITE);
-		btnPlus.setBounds(258, 222, 70, 29);
+		btnPlus.setBounds(268, 220, 42, 29);
 		contentPane.add(btnPlus);
 		
 		JButton btnEgal = new JButton("=");
@@ -237,7 +237,7 @@ public class Calculatrice extends JFrame {
 		btnEgal.setForeground(Color.BLACK);
 		btnEgal.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btnEgal.setBackground(Color.WHITE);
-		btnEgal.setBounds(178, 222, 70, 29);
+		btnEgal.setBounds(268, 256, 42, 29);
 		contentPane.add(btnEgal);
 		
 		JButton btnVirgule = new JButton(",");
@@ -250,7 +250,7 @@ public class Calculatrice extends JFrame {
 		btnVirgule.setForeground(Color.BLACK);
 		btnVirgule.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btnVirgule.setBackground(Color.WHITE);
-		btnVirgule.setBounds(98, 222, 70, 29);
+		btnVirgule.setBounds(180, 250, 70, 35);
 		contentPane.add(btnVirgule);
 		
 		JButton btn0 = new JButton("0");
@@ -263,8 +263,17 @@ public class Calculatrice extends JFrame {
 		btn0.setForeground(Color.BLACK);
 		btn0.setFont(new Font("Segoe UI", Font.BOLD, 20));
 		btn0.setBackground(Color.WHITE);
-		btn0.setBounds(18, 222, 70, 29);
+		btn0.setBounds(100, 251, 70, 35);
 		contentPane.add(btn0);
+		
+		JButton btn0_1 = new JButton("AC");
+		btn0_1.setForeground(Color.BLACK);
+		btn0_1.setFont(new Font("Segoe UI", Font.BOLD, 17));
+		btn0_1.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
+		btn0_1.setBorder(new LineBorder(new Color(0, 0, 0), 0, true));
+		btn0_1.setBackground(Color.WHITE);
+		btn0_1.setBounds(20, 251, 70, 35);
+		contentPane.add(btn0_1);
 
 	}
 }
