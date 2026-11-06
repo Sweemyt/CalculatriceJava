@@ -389,18 +389,26 @@ public class Calculatrice extends JFrame {
 				nombreEnCours = ("");
 				String Calcule = String.join("", Affichage);
 				
-				Expression a = new ExpressionBuilder(Calcule).build();
-		        double resultat = a.evaluate();
-		        
-		        if (resultat % 1 == 0) {
-		            Label.setText(String.valueOf((int) resultat));
-		        } else {
-			        Label.setText(Double.toString(resultat));
-		        }
-		        
-		        Affichage.clear();
-				elements.clear();
-				nombreEnCours = "";
+				try {
+					Expression a = new ExpressionBuilder(Calcule).build();
+			        double resultat = a.evaluate();
+			        
+			        if (resultat % 1 == 0) {
+			            Label.setText(String.valueOf((int) resultat));
+			        } else {
+				        Label.setText(Double.toString(resultat));
+			        }
+			        
+			        Affichage.clear();
+					elements.clear();
+					nombreEnCours = "";
+				} catch (Exception ex) {
+			        Label.setText("Erreur");
+			        
+			        elements.clear();
+			        Affichage.clear();
+			        nombreEnCours = "";
+			    }
 			}
 		});
 		btnEgal.setCursor(Cursor.getPredefinedCursor(Cursor.HAND_CURSOR));
