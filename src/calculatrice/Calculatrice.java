@@ -388,9 +388,15 @@ public class Calculatrice extends JFrame {
 				elements.add(nombreEnCours);
 				nombreEnCours = ("");
 				String Calcule = String.join("", Affichage);
+				
 				Expression a = new ExpressionBuilder(Calcule).build();
 		        double resultat = a.evaluate();
-		        Label.setText(Double.toString(resultat));
+		        
+		        if (resultat % 1 == 0) {
+		            Label.setText(String.valueOf((int) resultat));
+		        } else {
+			        Label.setText(Double.toString(resultat));
+		        }
 		        
 		        Affichage.clear();
 				elements.clear();
