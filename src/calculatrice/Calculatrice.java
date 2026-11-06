@@ -392,8 +392,8 @@ public class Calculatrice extends JFrame {
 		        double resultat = a.evaluate();
 		        Label.setText(Double.toString(resultat));
 		        
-				Affichage = null;
-				elements = null;
+		        Affichage.clear();
+				elements.clear();
 				nombreEnCours = "";
 			}
 		});
@@ -408,8 +408,8 @@ public class Calculatrice extends JFrame {
 		JButton btn_All_Clear = new JButton("AC");
 		btn_All_Clear.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Affichage = null;
-				elements = null;
+				Affichage.clear();
+				elements.clear();
 				nombreEnCours = "";
 				Label.setText("0");
 			}
